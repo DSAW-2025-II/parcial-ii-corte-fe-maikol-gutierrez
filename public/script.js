@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/v1";
+const API_URL = "https://parcial-ii-corte-be-maikol-gutierrez.onrender.com/api/v1";
 let token = null;
 
 async function login() {
