@@ -59,11 +59,12 @@ async function buscarPokemon() {
 
     if (res.ok) {
       resultado.innerHTML = `
-        <h3>${data.name.toUpperCase()}</h3>
-        <p>Especie: ${data.species}</p>
-        <p><b>Peso:</b> ${(data.weight / 10)} kg</p>
-        <img src="${data.img_url}" alt="${data.name}">
-      `;
+  <h3>${data.name.toUpperCase()}</h3>
+  <p>Especie: ${data.species}</p>
+  <p><b>Peso:</b> ${data.weight} kg</p>
+  <img src="${data.img_url}" alt="${data.name}">
+`;
+
     } else {
       resultado.innerHTML = `<p class="error"> ${data.error}</p>`;
     }
